@@ -54,7 +54,7 @@ const ColorList = ({ colors, updateColors }) => {
         updateColors(res.data)
       })
       .catch(error => console.log(error))
-
+      .finally(setNewColor(initialColor))
   }
 
   return (
